@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["AMZN"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.141.1253.0 (25.03)+74f9999a1e95f78c739f3ea2b96ba340e9ba8729
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table AMZN
+ref table DateTableTemplate_a6002128-7d6c-4bd0-9a28-bd84ae156108
+ref table LocalDateTable_1f3ffac3-61d2-4c64-8013-bdaf89f3ffff
+
+ref cultureInfo en-US
+

@@ -1,0 +1,62 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2d6619899420324a63a7",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Chart page",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "5ccc93c26000d79c4e0c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"c15d3e5b79c1803d8a11\",\"layouts\":[{\"id\":0,\"position\":{\"x\":39,\"y\":310,\"width\":1241,\"height\":300,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(AMZN.High)\"},{\"queryRef\":\"Sum(AMZN.Low)\"},{\"queryRef\":\"Sum(AMZN.Open)\"},{\"queryRef\":\"Sum(AMZN.Volume)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AMZN\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"High\"}},\"Function\":0},\"Name\":\"Sum(AMZN.High)\",\"NativeReferenceName\":\"Sum of High\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Low\"}},\"Function\":0},\"Name\":\"Sum(AMZN.Low)\",\"NativeReferenceName\":\"Sum of Low\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Open\"}},\"Function\":0},\"Name\":\"Sum(AMZN.Open)\",\"NativeReferenceName\":\"Sum of Open\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Volume\"}},\"Function\":0},\"Name\":\"Sum(AMZN.Volume)\",\"NativeReferenceName\":\"Sum of Volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"High\"}},\"Function\":0}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 1241.00,
+          "x": 39.00,
+          "y": 310.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"d058e56ea91461430781\",\"layouts\":[{\"id\":0,\"position\":{\"x\":38.88,\"y\":0,\"z\":0,\"width\":1241.28,\"height\":299.52000000000004}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"AMZN.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"AMZN.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"AMZN.Date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"AMZN.Date.Variation.Date Hierarchy.Day\"}],\"Y\":[{\"queryRef\":\"Sum(AMZN.High)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"AMZN\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"AMZN.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"AMZN.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"AMZN.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"AMZN.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"High\"}},\"Function\":0},\"Name\":\"Sum(AMZN.High)\",\"NativeReferenceName\":\"Sum of High\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dotted'\"}}},\"strokeTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"28D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":-0.25}}}}}},\"selector\":{\"metadata\":\"Sum(AMZN.High)\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Pricing'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 299.52,
+          "width": 1241.28,
+          "x": 38.88,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
